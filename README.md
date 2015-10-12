@@ -15,6 +15,27 @@ bool checkBalancedTree(node * root, int *h){
 }
 ```
 
+## Bit Magic
+1. Some of the common tricks involved in all the quetions are **getBit**, **setBit**, **flipBit**:
+```
+bool getBit(int n int index){
+	return ((n & (1 << index)) > 0);
+}
+// bool b used for setting bit to 0 or 1
+int setBit(int n, int index, bool b){
+	if(b){
+		return (n | (1 << index));
+	}
+	else{
+		int mask = ~(1 << index);
+		return n & mask;
+	}
+}
+int toggleBit(int n, int index){
+	return (n ^ (1 << index));
+}
+```
+
 ## Writing reursive functions
 Always write base case first. Some of the common base cases are:
 ```
