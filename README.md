@@ -16,7 +16,7 @@ bool checkBalancedTree(node * root, int *h){
 ```
 
 ## Bit Magic
-1. Some of the common tricks involved in all the quetions are **getBit**, **setBit**, **flipBit**:
+### 1. Some of the common tricks involved in all the quetions are **getBit**, **setBit**, **flipBit**:
 ```C
 bool getBit(int n int index){
 	return ((n & (1 << index)) > 0);
@@ -36,7 +36,7 @@ int toggleBit(int n, int index){
 }
 ```
 
-2. Clearing more than one bits:
+### 2. Clearing more than one bits:
 ```C
 //clear all bits from MSB through i (inclusive)
 int clearBitsMSBthroughI(int num, int i){
