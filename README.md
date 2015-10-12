@@ -17,7 +17,7 @@ bool checkBalancedTree(node * root, int *h){
 
 ## Bit Magic
 1. Some of the common tricks involved in all the quetions are **getBit**, **setBit**, **flipBit**:
-```C++
+```C
 bool getBit(int n int index){
 	return ((n & (1 << index)) > 0);
 }
@@ -38,7 +38,7 @@ int toggleBit(int n, int index){
 
 ## Writing reursive functions
 Always write base case first. Some of the common base cases are:
-```C++
+```javascript
 int getHeight(node * root){
 	if (root == null) return 0;
 	------------
