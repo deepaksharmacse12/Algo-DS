@@ -8,7 +8,7 @@
 
 ## Binary Trees
 1. [How to determine if a binary tree is height-balanced?](http://www.geeksforgeeks.org/how-to-determine-if-a-binary-tree-is-balanced/):First go directly and then go for the optimized approach by **passing the pointers** so as to **calculate the height**.
-```javascript
+```C
 // h is the height of tree rooted at node root
 bool checkBalancedTree(node * root, int *h){
 	if(root == null){*h = 0; return false;}
