@@ -38,7 +38,7 @@ int toggleBit(int n, int index){
 
 ## Writing reursive functions
 Always write base case first. Some of the common base cases are:
-```javascript
+```C
 int getHeight(node * root){
 	if (root == null) return 0;
 	------------
