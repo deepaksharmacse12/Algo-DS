@@ -36,7 +36,7 @@ int toggleBit(int n, int index){
 }
 ```
 
-## Writing reursive functions
+## Writing recursive functions
 Always write base case first. Some of the common base cases are:
 ```C
 int getHeight(node * root){
