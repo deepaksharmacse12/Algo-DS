@@ -35,6 +35,7 @@ int toggleBit(int n, int index){
 	return (n ^ (1 << index));
 }
 ```
+
 2. Clearing more than one bits:
 ```C
 //clear all bits from MSB through i (inclusive)
