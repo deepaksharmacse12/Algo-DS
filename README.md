@@ -35,6 +35,19 @@ int toggleBit(int n, int index){
 	return (n ^ (1 << index));
 }
 ```
+2. Clearing more than one bits:
+```C
+//clear all bits from MSB through i (inclusive)
+int clearBitsMSBthroughI(int num, int i){
+	int mask = (1 << i) - 1;
+	return num & mask;
+}
+// clear all bits from i through 0 (inclusive)
+int clearBitsIthrough0(int num, int i){
+	int mask = ~((1 << (i+1)) - 1);
+	return num & mask;
+}
+```
 
 ## Writing recursive functions
 Always write base case first. Some of the common base cases are:
