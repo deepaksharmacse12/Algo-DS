@@ -50,6 +50,17 @@ int clearBitsIthrough0(int num, int i){
 }
 ```
 
+### 3. Counting number of 1s in number:
+
+```C
+int countOne(int n){
+	int count = 0;
+	for(int c = n; c != 0; c >> 1)
+		count += c&1;
+	return count;
+}
+```
+
 ## Writing recursive functions
 Always write base case first. Some of the common base cases are:
 ```C
