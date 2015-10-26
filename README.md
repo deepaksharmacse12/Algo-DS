@@ -61,7 +61,7 @@ int countOne(int n){
 }
 ```
 
-## Writing recursive functions
+## Recursive functions
 Always write base case first. Some of the common base cases are:
 ```C
 int getHeight(node * root){
