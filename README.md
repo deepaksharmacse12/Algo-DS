@@ -81,11 +81,11 @@ void binarySearch(int a[], int low, int high, int key){
 ## 1. Arrays and Strings:
 1. Most of the questions are easy to solve using hash map. 
 2. Consinder using vectors (cpp STL) and strings (cpp STL), while solving the questions.
-3. Hash Map for charachters will depend upon the size of the char we are using, normally 1 byte will take
+3. Hash Map for charachters will depend upon the size of the char we are using, normally 1 byte will take:
 ```C
 	bool char_set[256]; 
 ```
-   We can also decrease the size by a factor of 8 using a bit vector for mapping, suppose string only uses the lower case letters a through z, we can use a long of 4 byte (32 bits).
+We can also decrease the size by a factor of 8 using a bit vector for mapping, suppose string only uses the lower case letters a through z, we can use a long of 4 byte (32 bits).
 ```C
 	int checker = 0, val;
 	// mapping done in checker
