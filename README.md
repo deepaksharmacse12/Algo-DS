@@ -101,7 +101,8 @@ We can also decrease the size by a factor of 8 using a bit vector for mapping, s
 ## 2. LinkedLists
 1. Be careful while __deleting__ a node from linked list, change of head may occur.
 2. Use __runner__ technique, slow and fast pointer approach (middle of list, detecing a loop, etc.)
-3. Accessing __k th__ element of list iteratively: ```C
+3. Accessing __k th__ element of list iteratively: 
+```C
 	// assuming array and list indexing begin from '0'
 	for (int i=0; i<k ; i++)
 	{
@@ -117,7 +118,6 @@ We can also decrease the size by a factor of 8 using a bit vector for mapping, s
 	}
 	// list will point to kth element
 ```
-
 4. Check whether node is __null__ or not before using it:
 ```C
 node * DLLtoBST(node* list){
