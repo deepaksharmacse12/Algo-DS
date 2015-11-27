@@ -96,4 +96,4 @@ void binarySearch(int a[], int low, int high, int key){
 			checker |= 1 << val;
 	}
 ```
-4. The only "gotcha" in easy peroblems is to do it 
+4. The only "gotcha" in easy peroblems is to do it __inplace__
