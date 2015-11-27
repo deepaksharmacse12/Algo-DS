@@ -75,3 +75,25 @@ void binarySearch(int a[], int low, int high, int key){
 	------------
 }
 ```
+
+# Cracking the Coding Interview
+
+## 1. Arrays and Strings:
+1. Most of the questions are easy to solve using hash map. 
+2. Consinder using vectors (cpp STL) and strings (cpp STL), while solving the questions.
+3. Hash Map for charachters will depend upon the size of the char we are using, normally 1 byte will take
+```C
+	bool char_set[256]; 
+```
+   We can also decrease the size by a factor of 8 using a bit vector for mapping, suppose string only uses the lower case letters a through z, we can use a long of 4 byte (32 bits).
+```C
+	int checker = 0, val;
+	// mapping done in checker
+	for (int i=0; i < str.length(); i++)
+	{
+		val = str[i];
+		if (checker & (1 << val) == 0)
+			checker |= 1 << val;
+	}
+```
+4. The only "gotcha" in easy peroblems is to do it 
