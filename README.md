@@ -97,3 +97,40 @@ We can also decrease the size by a factor of 8 using a bit vector for mapping, s
 	}
 ```
 4. The only "gotcha" in easy peroblems is to do it __inplace__
+
+## 2. LinkedLists
+1. Be careful while __deleting__ a node from linked list, change of head may occur.
+2. Use __runner__ technique, slow and fast pointer approach (middle of list, detecing a loop, etc.)
+3. Accessing __k th__ element of list iteratively:
+```C
+	// assuming array and list indexing begin from '0'
+	for (int i=0; i<k ; i++)
+	{
+		// accessing the ith element of an array
+	}
+	// acess a[k], i = k
+
+	list = head;
+	for(int i=0; i<k; i++)
+	{
+		// access the list ith element
+		list = list->next;
+	}
+	// list will point to kth element
+```
+4. Check whether node is __null__ or not before using it:
+```
+node * DLLtoBST(node* list){
+		if(list == null || list->next == null) return list;
+		node * midNode = getMiddle(list);
+		
+		// Check whether midNode->prev is null or not.
+		if (midNode->prev)
+			midNode->prev->next = null;
+		
+		if(midNode->next)
+			midNode->next->prev = null;
+		midNode->prev = DLLtoBST(list);
+		midNode->next = DLLtoBST(midNode->next);
+	}
+```
